@@ -28,4 +28,10 @@ function AppCtrl ($scope) {
       ]
     }
   };
+
+  $scope.currentAirport = null;
+
+  $scope.setAir = function (code) {
+    $scope.currentAirport = $scope.airports[code];
+  };
 }
